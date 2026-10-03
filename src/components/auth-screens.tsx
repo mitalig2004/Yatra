@@ -10,6 +10,7 @@ import {
   Check,
   Eye,
   EyeOff,
+  LoaderCircle,
   Mail,
   MapPin,
 } from "lucide-react";
@@ -22,11 +23,13 @@ function PasswordField({
   onChange,
   error,
   newPassword = false,
+  disabled = false,
 }: {
   value: string;
   onChange: (value: string) => void;
   error?: string;
   newPassword?: boolean;
+  disabled?: boolean;
 }) {
   const [visible, setVisible] = useState(false);
   return (
@@ -40,6 +43,7 @@ function PasswordField({
           autoComplete={newPassword ? "new-password" : "current-password"}
           value={value}
           onChange={(event) => onChange(event.target.value)}
+          disabled={disabled}
           aria-invalid={Boolean(error)}
           aria-describedby={error ? "password-error" : "password-help"}
           required
@@ -49,16 +53,17 @@ function PasswordField({
           className="password-toggle"
           aria-label={visible ? "Hide password" : "Show password"}
           onClick={() => setVisible((shown) => !shown)}
+          disabled={disabled}
         >
           {visible ? <EyeOff size={18} /> : <Eye size={18} />}
         </button>
       </div>
       {error ? (
-        <small className="auth-error" id="password-error">
+        <small className="auth-error" id="password-error" role="alert">
           {error}
         </small>
       ) : (
-        <small id="password-help">Use at least 8 characters.</small>
+        <small className="auth-help" id="password-help">Use at least 8 characters.</small>
       )}
     </div>
   );
@@ -130,6 +135,7 @@ export function AuthScreen({ mode }: { mode: AuthMode }) {
                 name="name"
                 autoComplete="name"
                 value={name}
+                disabled={busy}
                 onChange={(event) => {
                   setName(event.target.value);
                   setErrors((current) => ({ ...current, name: "" }));
@@ -138,7 +144,7 @@ export function AuthScreen({ mode }: { mode: AuthMode }) {
                 aria-describedby={errors.name ? "name-error" : undefined}
                 required
               />
-              {errors.name && <small className="auth-error" id="name-error">{errors.name}</small>}
+              {errors.name && <small className="auth-error" id="name-error" role="alert">{errors.name}</small>}
             </label>
           )}
           <label className="auth-field">
@@ -149,6 +155,7 @@ export function AuthScreen({ mode }: { mode: AuthMode }) {
               autoComplete="email"
               inputMode="email"
               value={email}
+              disabled={busy}
               onChange={(event) => {
                 setEmail(event.target.value);
                 setErrors((current) => ({ ...current, email: "" }));
@@ -157,7 +164,7 @@ export function AuthScreen({ mode }: { mode: AuthMode }) {
               aria-describedby={errors.email ? "email-error" : undefined}
               required
             />
-            {errors.email && <small className="auth-error" id="email-error">{errors.email}</small>}
+            {errors.email && <small className="auth-error" id="email-error" role="alert">{errors.email}</small>}
           </label>
           <PasswordField
             value={password}
@@ -167,14 +174,15 @@ export function AuthScreen({ mode }: { mode: AuthMode }) {
             }}
             error={errors.password}
             newPassword={isSignUp}
+            disabled={busy}
           />
           {!isSignUp && (
             <Link className="auth-forgot" href="/forgot-password">Forgot password?</Link>
           )}
           {formError && <p className="auth-form-error" role="alert">{formError}</p>}
           <button className="button primary auth-submit" disabled={busy} aria-busy={busy}>
-            {busy ? "Finding your way…" : isSignUp ? "Create account" : "Log in"}
-            {!busy && <ArrowRight size={18} />}
+            <span>{busy ? "Finding your way…" : isSignUp ? "Create account" : "Log in"}</span>
+            {busy ? <LoaderCircle className="auth-loader" size={18} aria-hidden="true" /> : <ArrowRight size={18} />}
           </button>
           <p className="auth-switch">
             {isSignUp ? "Already travelling with YATRA?" : "New to YATRA?"}{" "}
