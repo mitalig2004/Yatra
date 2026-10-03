@@ -1,6 +1,8 @@
-# YATRA — Design system foundation
+# YATRA — Design system
 
-Status: Proposed functional foundation, not a finalized brand kit. Visual values below are starting decisions to validate in wireframes and contrast checks. Final font families, exact color hex values, photography sources, and a logo remain intentionally unselected until visual exploration. This avoids decorating the system without testing its core planning surfaces.
+Status: Implemented product system for the portfolio prototype. The semantic palette, Instrument Serif/Manrope typography split, control proportions, and core planning patterns below are reflected in the application. Route-specific composition may vary, but it must use these shared roles. See `PRODUCT_AUDIT.md` for validation evidence and known limits.
+
+The system is intentionally small. It standardizes repeated decisions while allowing the landing, authentication, trip overview, timeline, map, and budget to keep the composition each task requires.
 
 ## 1. Visual concept and rationale
 
@@ -48,7 +50,11 @@ Density comes from grouping related content, not reducing hit targets or text si
 
 Editorial pages use a centered maximum width around 1280px; the workspace can use available width with bounded text lengths. Keep prose around 60–75 characters per line and forms around 560–640px when practical. Do not force a two-pane workspace below roughly 400px of usable timeline width. These are layout constraints to test, not rigid device dimensions.
 
-## 5. Color roles
+## 5. Implemented color roles
+
+The source of truth is the semantic token set in `src/app/globals.css`: warm canvas/paper/surface roles, primary/secondary/tertiary ink, forest brand roles, semantic success/warning/error/info roles, map-specific roles, and restrained editorial accents. Components use semantic roles rather than route-specific hex values.
+
+The approximate distribution is 70% warm neutral surfaces, 20% ink and forest brand, and 10% supporting accents. Photography supplies most destination color. Warning amber communicates itinerary conflicts; error red is reserved for validation failures and destructive outcomes. Preview always includes a visible “Preview” label or equivalent text in addition to route or surface styling.
 
 | Semantic role | Proposed direction | UX purpose |
 | --- | --- | --- |
@@ -91,6 +97,16 @@ Use Lucide-style outline icons consistently at 16, 20, or 24px with coherent str
 Use location, clock, route, wallet, bookmark, move, lock, and people icons only where they clarify meaning. Reservation and locked states require text explanations. Avoid sparkle icons as the primary way to identify AI. Suggestion content itself should say “Suggested” and explain why.
 
 ## 9. Buttons and actions
+
+Implemented control tokens are 40px small, 44px medium, and 52px large, with a 6px control radius and 180ms state transition. Medium is the default. Full-width controls are used when the task or compact layout benefits from them, not as a default desktop treatment.
+
+- **Primary:** forest fill and white label; one dominant action per task region.
+- **Secondary:** paper fill and forest border; supporting action.
+- **Tertiary/ghost:** text-forward action with a subtle brand hover surface.
+- **Destructive:** error fill and explicit destructive language; never used for ordinary conflicts.
+- **Icon button:** 44px target, 18px Lucide glyph, accessible name, and visible hover/focus boundary.
+
+Every variant provides default, hover, pressed, focus-visible, disabled, and loading behavior. Loading preserves dimensions. Icons remain only when they add direction, identity, or comprehension; submission arrows are not decorative defaults.
 
 Variants: primary filled, secondary outlined, tertiary text, and destructive with explicit action language. One visually dominant action per task region. Do not make every card's action primary.
 

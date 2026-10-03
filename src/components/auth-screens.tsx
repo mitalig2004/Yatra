@@ -6,7 +6,6 @@ import { FormEvent, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import {
   ArrowLeft,
-  ArrowRight,
   Check,
   Eye,
   EyeOff,
@@ -182,7 +181,7 @@ export function AuthScreen({ mode }: { mode: AuthMode }) {
           {formError && <p className="auth-form-error" role="alert">{formError}</p>}
           <button className="button primary auth-submit" disabled={busy} aria-busy={busy}>
             <span>{busy ? "Finding your way…" : isSignUp ? "Create account" : "Log in"}</span>
-            {busy ? <LoaderCircle className="auth-loader" size={18} aria-hidden="true" /> : <ArrowRight size={18} />}
+            {busy && <LoaderCircle className="auth-loader" size={18} aria-hidden="true" />}
           </button>
           <p className="auth-switch">
             {isSignUp ? "Already travelling with YATRA?" : "New to YATRA?"}{" "}
@@ -228,7 +227,7 @@ export function ForgotPassword() {
             <h1>Check your inbox.</h1>
             <p>We’ve sent password reset instructions to:</p>
             <strong>{email}</strong>
-            <Link href="/login" className="button primary">Back to log in <ArrowRight size={18} /></Link>
+            <Link href="/login" className="button primary">Back to log in</Link>
           </div>
         ) : (
           <>
@@ -260,9 +259,9 @@ export function ForgotPassword() {
                   aria-describedby={error ? "forgot-email-error" : undefined}
                   required
                 />
-                {error && <small className="auth-error" id="forgot-email-error">{error}</small>}
+                {error && <small className="auth-error" id="forgot-email-error" role="alert">{error}</small>}
               </label>
-              <button className="button primary">Send reset link <ArrowRight size={18} /></button>
+              <button className="button primary">Send reset link</button>
             </form>
             <p className="small muted">Prototype only · No email will be sent.</p>
           </>

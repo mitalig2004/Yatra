@@ -80,3 +80,28 @@ test("authentication and Trips Home are accessible and responsive on mobile", as
   expect(tripsAudit.violations).toEqual([]);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
 });
+
+test("login keeps a focused form beside the editorial image on large screens", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/login");
+
+  const layout = await page.evaluate(() => {
+    const content = document.querySelector<HTMLElement>(".auth-content")!;
+    const visual = document.querySelector<HTMLElement>(".auth-visual")!;
+    const contentBox = content.getBoundingClientRect();
+    const visualBox = visual.getBoundingClientRect();
+    return {
+      overflow: document.documentElement.scrollWidth > innerWidth,
+      contentWidth: contentBox.width,
+      visualWidth: visualBox.width,
+      visualVisible: getComputedStyle(visual).display !== "none",
+      visualLeftOfContent: visualBox.left < contentBox.left,
+    };
+  });
+
+  expect(layout.overflow).toBeFalsy();
+  expect(layout.contentWidth).toBeLessThanOrEqual(500);
+  expect(layout.visualWidth).toBeGreaterThanOrEqual(440);
+  expect(layout.visualVisible).toBeTruthy();
+  expect(layout.visualLeftOfContent).toBeTruthy();
+});

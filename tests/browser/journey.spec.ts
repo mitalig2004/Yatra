@@ -121,8 +121,8 @@ test("desktop drag creates a proposal, discard restores accepted state", async (
   await page.goto("/trip/goa/plan");
   await expect(page.getByTestId("accepted-total")).toContainText("₹37,600");
   await page
-    .locator("article")
-    .filter({ has: page.locator("#activity-cafe") })
+    .locator("#activity-cafe")
+    .locator("xpath=ancestor::article[1]")
     .dragTo(page.getByTestId("day-2"));
   await expect(
     page.getByRole("heading", { name: "You’re 20 minutes short." }),
