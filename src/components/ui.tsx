@@ -69,8 +69,9 @@ export function Footer() {
       <span>
         YATRA <span className="muted">— Make room for the journey.</span>
       </span>
-      <span>
+      <span className="footer-story">
         A product exploration by <strong>Mitali Giri</strong>
+        <Link href="/case-study">Read the case study <ArrowUpRight size={14} /></Link>
       </span>
     </footer>
   );
