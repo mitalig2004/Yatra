@@ -26,7 +26,8 @@ The prototype is strongest when it stays close to this decision model. It is not
 | `/trip/goa` | Trip overview | Functional |
 | `/trip/goa/plan` | Timeline and illustrative map workspace | Functional |
 | `/trip/goa/budget` | Budget breakdown and reconciliation | Functional |
-| `/case-study` | Portfolio case study | Implemented from this audit |
+| `/work/yatra` | Canonical portfolio case study | Implemented from this audit |
+| `/case-study` | Legacy case-study route | Redirects to `/work/yatra` |
 
 The not-found route provides a branded recovery state.
 

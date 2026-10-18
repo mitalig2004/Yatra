@@ -5215,6 +5215,12 @@ em {
   }
 }
 
+@media print {
+  .skip-link {
+    display: none !important;
+  }
+}
+
 /* Final interaction polish: denser decisions, explicit choices and quiet motion. */
 .day-mobile-label {
   display: none;
@@ -9019,6 +9025,13 @@ textarea::placeholder { color: var(--text-secondary); }
 
 /* Mobile planner hierarchy and compact brand lockup. */
 @media (max-width: 600px) {
+  body:has(.case-study-page) .header-link,
+  body:has(.case-study-page) .header-login {
+    display: none;
+  }
+  body:has(.case-study-page) .site-header nav {
+    margin-left: auto;
+  }
   .site-header {
     height: 64px;
     padding-inline: 15px;

@@ -71,7 +71,7 @@ export function Footer() {
       </span>
       <span className="footer-story">
         A product exploration by <strong>Mitali Giri</strong>
-        <Link href="/case-study">Read the case study <ArrowUpRight size={14} /></Link>
+        <Link href="/work/yatra">Read the case study <ArrowUpRight size={14} /></Link>
       </span>
     </footer>
   );
