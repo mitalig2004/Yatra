@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Destination markers</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 13</text>
+  
+    <path d="M102 300c52-38 100-37 145-10 70 41 121 31 179-8 46-31 80-25 112 8" stroke="#9EAC98" stroke-width="12" fill="none"/>
+    <g><path d="M135 122c-42 0-70 31-70 69 0 56 70 111 70 111s70-55 70-111c0-38-28-69-70-69Z" fill="#1F513F"/><circle cx="135" cy="190" r="24" fill="#FCFBF7"/></g>
+    <g transform="translate(238 -14)"><path d="M135 122c-42 0-70 31-70 69 0 56 70 111 70 111s70-55 70-111c0-38-28-69-70-69Z" fill="#B7795E"/><circle cx="135" cy="190" r="24" fill="#FCFBF7"/></g>
+    <g transform="translate(405 15) scale(.75)"><path d="M135 122c-42 0-70 31-70 69 0 56 70 111 70 111s70-55 70-111c0-38-28-69-70-69Z" fill="#B58A50"/><circle cx="135" cy="190" r="24" fill="#FCFBF7"/></g>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

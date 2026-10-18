@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Luggage and travel accessories</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 09</text>
+  
+    <rect x="170" y="122" width="205" height="202" rx="22" fill="#B7795E" stroke="#20211D" stroke-width="5"/>
+    <path d="M230 122V91h85v31M219 159v128M327 159v128" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="216" cy="337" r="14" fill="#20211D"/><circle cx="329" cy="337" r="14" fill="#20211D"/>
+    <path d="M421 188h89l-12 113h-65Z" fill="#EDE4D2" stroke="#20211D" stroke-width="5"/><path d="M438 188c0-45 55-45 55 0" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 155h56l-7 64H97Z" fill="#76949A" opacity=".5"/><path d="M103 155c0-29 30-29 30 0" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

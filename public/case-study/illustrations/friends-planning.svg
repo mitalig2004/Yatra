@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Friends planning a trip</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 02</text>
+  
+    <ellipse cx="320" cy="246" rx="236" ry="70" fill="#EDE4D2"/>
+    <rect x="228" y="178" width="184" height="108" rx="8" fill="#FCFBF7" stroke="#20211D" stroke-width="5"/>
+    <path d="M245 200h66M245 222h104M245 245h81M352 202l28 28-28 28" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="146" cy="154" r="37" fill="#B7795E"/><path d="M98 282c4-72 19-102 48-102s48 30 52 102" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="494" cy="154" r="37" fill="#76949A"/><path d="M442 282c5-72 22-102 52-102s47 30 52 102" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m165 204 68 35M475 204l-63 35" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M112 326h416" stroke="#1F513F" stroke-width="6"/>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated Goa destination map</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 03</text>
+  
+    <path d="M294 86c62 6 101 49 82 96-13 31 22 48 8 91-11 36-55 62-103 54-48-7-88-35-82-75 5-34 39-45 34-78-6-42 9-94 61-88Z" fill="#EDE4D2" stroke="#1F513F" stroke-width="6"/>
+    <path d="M74 101v223h93c-30-28-39-58-25-89 13-29 42-43 32-75-9-29-7-50 6-59Z" fill="#76949A" opacity=".42"/>
+    <path d="M76 150c39 13 70 6 98-20M82 218c44 15 73 6 101-19M82 286c36 12 66 5 93-17" stroke="#76949A" stroke-width="4" fill="none"/>
+    <path d="M287 124c-12 37 42 41 19 78-17 27-45 26-38 66 5 26 28 37 57 42" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 12"/>
+    <circle cx="287" cy="124" r="11" fill="#1F513F"/><circle cx="306" cy="202" r="11" fill="#B7795E"/><circle cx="268" cy="268" r="11" fill="#B58A50"/><circle cx="325" cy="310" r="11" fill="#1F513F"/>
+    <text x="432" y="134" fill="#20211D" font-family="Georgia,serif" font-size="38">GOA</text><text x="432" y="163" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">15.6° N</text>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Itinerary timing conflict</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 14</text>
+  
+    <path d="M84 210h472" stroke="#20211D" stroke-width="4"/>
+    <circle cx="151" cy="210" r="25" fill="#1F513F"/><circle cx="331" cy="210" r="25" fill="#B58A50"/><circle cx="492" cy="210" r="25" fill="#B7795E"/>
+    <path d="M151 174v-48M331 174v-48M492 174v-48" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="151" y="107" text-anchor="middle" fill="#20211D" font-family="Arial" font-size="13">CAFÉ ENDS</text><text x="151" y="91" text-anchor="middle" fill="#1F513F" font-family="Georgia" font-size="25">5:00</text>
+    <text x="331" y="107" text-anchor="middle" fill="#20211D" font-family="Arial" font-size="13">TRAVEL</text><text x="331" y="91" text-anchor="middle" fill="#B58A50" font-family="Georgia" font-size="25">20 MIN</text>
+    <text x="492" y="107" text-anchor="middle" fill="#20211D" font-family="Arial" font-size="13">RESERVATION</text><text x="492" y="91" text-anchor="middle" fill="#B7795E" font-family="Georgia" font-size="25">5:00</text>
+    <path d="M465 279h55l-28 49Z" fill="#B58A50"/><text x="320" y="319" text-anchor="middle" fill="#20211D" font-family="Georgia" font-size="27">You’re 20 minutes short.</text>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

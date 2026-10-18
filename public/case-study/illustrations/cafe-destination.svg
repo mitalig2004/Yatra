@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Coastal cafe destination</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 06</text>
+  
+    <path d="M107 168h426l-32-67H139Z" fill="#B7795E"/>
+    <path d="M121 168v144h398V168M192 168v144M448 168v144" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="230" y="202" width="178" height="74" fill="#76949A" opacity=".28"/>
+    <path d="M255 237h126M282 214v46M355 214v46" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="319" cy="131" r="9" fill="#FCFBF7"/><path d="M91 312h458" stroke="#1F513F" stroke-width="6"/>
+    <path d="M84 110c19 0 19 27 38 27s19-27 38-27 19 27 38 27" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="242" y="340" fill="#1F513F" font-family="Georgia" font-size="27">shared favourite</text>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

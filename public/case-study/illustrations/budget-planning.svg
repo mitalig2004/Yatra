@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Travel budget planning</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 08</text>
+  
+    <rect x="84" y="104" width="472" height="214" rx="14" fill="#EDE4D2"/>
+    <path d="M120 274V176M187 274v-62M254 274V147M321 274v-83M388 274v-117M455 274v-46" stroke="#1F513F" stroke-width="20"/>
+    <path d="M110 288h364" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="485" cy="146" r="48" fill="#FCFBF7" stroke="#20211D" stroke-width="5"/>
+    <text x="485" y="157" text-anchor="middle" fill="#1F513F" font-family="Arial" font-size="31" font-weight="700">₹</text>
+    <text x="86" y="349" fill="#20211D" font-family="Georgia" font-size="28">₹37,600 → ₹38,000</text>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

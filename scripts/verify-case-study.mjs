@@ -28,7 +28,7 @@ for (const viewport of viewports) {
   await page.goto("http://127.0.0.1:3000/work/yatra", {
     waitUntil: "domcontentloaded",
   });
-  await page.getByRole("heading", { name: /Great trips begin/ }).waitFor();
+  await page.getByRole("heading", { name: /Every great journey/ }).waitFor();
 
   const pageHeight = await page.evaluate(() => document.documentElement.scrollHeight);
   for (let y = 0; y < pageHeight; y += Math.max(480, viewport.height * 0.75)) {
@@ -78,6 +78,41 @@ for (const viewport of viewports) {
 
   await context.close();
 }
+
+const revisionContext = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+const revisionPage = await revisionContext.newPage();
+await revisionPage.goto("http://127.0.0.1:3000/work/yatra", { waitUntil: "domcontentloaded" });
+await revisionPage.getByRole("heading", { name: /Every great journey/ }).waitFor();
+const revisionSteps = revisionPage.locator("[data-revision-step]");
+const expectedRevisionLabels = [
+  "ACCEPTED PLAN · REVISION 1",
+  "PROPOSAL · NOT APPLIED",
+  "CONFLICT · 20 MINUTES",
+  "PROPOSAL · CONFLICT CLEARED",
+  "ACCEPTED PLAN · REVISION 2",
+  "RESTORED · REVISION 1",
+];
+for (let index = 0; index < expectedRevisionLabels.length; index += 1) {
+  const targetY = await revisionSteps.nth(index).evaluate(
+    (element) => window.scrollY + element.getBoundingClientRect().top - window.innerHeight * 0.5,
+  );
+  await revisionPage.evaluate((nextY) => window.scrollTo(0, nextY), targetY);
+  await revisionPage.waitForTimeout(520);
+  const label = await revisionPage.locator("[data-revision-status] span").textContent();
+  if (label?.trim() !== expectedRevisionLabels[index]) {
+    throw new Error(`Revision story step ${index + 1} did not activate: ${label}`);
+  }
+}
+const firstStepY = await revisionSteps.first().evaluate(
+  (element) => window.scrollY + element.getBoundingClientRect().top - window.innerHeight * 0.5,
+);
+await revisionPage.evaluate((nextY) => window.scrollTo(0, nextY), firstStepY);
+await revisionPage.waitForTimeout(520);
+const restoredBackwardLabel = await revisionPage.locator("[data-revision-status] span").textContent();
+if (restoredBackwardLabel?.trim() !== expectedRevisionLabels[0]) {
+  throw new Error(`Revision story did not reverse on upward scroll: ${restoredBackwardLabel}`);
+}
+await revisionContext.close();
 
 const legacyContext = await browser.newContext({ viewport: { width: 1024, height: 768 } });
 const legacyPage = await legacyContext.newPage();

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Travel calendar</title><desc id="desc">Original YATRA travel-journal illustration.</desc>
+  <rect width="640" height="420" rx="18" fill="#FCFBF7"/>
+  <path d="M24 64H616M24 356H616" stroke="#20211D" stroke-opacity=".16"/>
+  <text x="28" y="43" fill="#1F513F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">YATRA FIELD NOTE 07</text>
+  
+    <rect x="106" y="96" width="428" height="232" rx="14" fill="#FCFBF7" stroke="#20211D" stroke-width="5"/>
+    <path d="M106 153h428M190 96v42M450 96v42" fill="none" stroke="#20211D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#EDE4D2"><rect x="137" y="181" width="78" height="48"/><rect x="231" y="181" width="78" height="48"/><rect x="325" y="181" width="78" height="48"/><rect x="419" y="181" width="78" height="48"/></g>
+    <g fill="#1F513F" font-family="Georgia" font-size="26" text-anchor="middle"><text x="176" y="214">1</text><text x="270" y="214">2</text><text x="364" y="214">3</text><text x="458" y="214">4</text></g>
+    <path d="M151 266h130M151 288h204M392 272h74" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="596" cy="382" r="17" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m587 382 7 7 12-15" fill="none" stroke="#1F513F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
