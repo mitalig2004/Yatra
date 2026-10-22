@@ -17,9 +17,7 @@ export function CaseStudyMotion({ children }: { children: ReactNode }) {
       gsap.timeline({ defaults: { ease: "power3.out" } })
         .from("[data-hero-title] > span", { y: 70, autoAlpha: 0, duration: 0.9 })
         .from("[data-hero-title] h1", { y: 50, autoAlpha: 0, duration: 0.8 }, "-=.55")
-        .from("[data-postcard]", { y: 70, rotate: 0, autoAlpha: 0, stagger: 0.14, duration: 0.75 }, "-=.45")
-        .from("[data-product-float]", { y: 90, autoAlpha: 0, stagger: 0.12, duration: 0.85 }, "-=.45")
-        .from("[data-stamp]", { scale: 1.5, rotate: 20, autoAlpha: 0, duration: 0.55 }, "-=.4");
+        .from("[data-postcard]", { y: 70, rotate: 0, autoAlpha: 0, stagger: 0.14, duration: 0.75 }, "-=.45");
 
       gsap.utils.toArray<HTMLElement>("[data-reveal]").forEach((element) => {
         gsap.fromTo(element, { autoAlpha: 0, y: 42 }, {

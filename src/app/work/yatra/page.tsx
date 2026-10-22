@@ -154,13 +154,6 @@ export default function CaseStudyPage() {
           <div className={styles.heroTicket} data-postcard>
             <Image src="/case-study/illustrations/boarding-pass.svg" alt="Illustrated YATRA boarding pass from Mumbai to Goa" width={640} height={420} />
           </div>
-          <div className={styles.heroProduct} data-product-float>
-            <Image src="/case-study/plan-desktop.png" alt="YATRA desktop itinerary and Goa map" width={1440} height={1000} priority />
-          </div>
-          <div className={styles.heroPhone} data-product-float>
-            <Image src="/case-study/plan-mobile.png" alt="YATRA mobile timeline" width={390} height={844} priority />
-          </div>
-          <div className={styles.heroStamp} data-stamp aria-hidden="true"><b>GOA</b><span>FIELD NOTES</span><small>19 · 10 · 26</small></div>
           <div className={styles.heroSummary}>
             <p>YATRA turns scattered inspiration, constraints and places into one editable visual itinerary—then explains every consequence before a traveler commits.</p>
             <div>
