@@ -123,6 +123,19 @@ export default function CaseStudyPage() {
           </nav>
         </aside>
 
+        <details className={styles.mobileChapterNav}>
+          <summary>
+            <span>Explore the case study</span>
+            <strong>12 chapters</strong>
+            <ArrowDown aria-hidden="true" />
+          </summary>
+          <nav aria-label="Case study chapters">
+            {chapters.map(([number, label, id]) => (
+              <a key={id} href={`#${id}`}><span>{number}</span>{label}</a>
+            ))}
+          </nav>
+        </details>
+
         <section id="journey-begins" className={styles.hero} data-export-panel="01-cover">
           <Photo src="/case-study/photos/mandrem-sunset.jpg" alt="Sunset over Mandrem Beach in Goa" className={styles.heroPhoto} priority />
           <div className={styles.heroShade} />
