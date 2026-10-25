@@ -139,7 +139,7 @@ export default function CaseStudyPage() {
           <Photo src="/case-study/photos/mandrem-sunset.jpg" alt="Sunset over Mandrem Beach in Goa" className={styles.heroPhoto} priority />
           <div className={styles.heroShade} />
           <div className={styles.heroTop}>
-            <p><strong>Product design case study</strong> · 2026</p>
+            <p><span>Product design</span><strong>Case study</strong><span>· 2026</span></p>
             <p>Goa, India · 15.6° N</p>
           </div>
           <div className={styles.heroTitle} data-hero-title>
