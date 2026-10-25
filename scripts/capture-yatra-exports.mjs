@@ -40,7 +40,6 @@ const panels = [
   ["06-wireframes-and-decisions", "06-wireframes"],
   ["07-brand-and-illustrations", "07-identity"],
   ["08-authentic-product", "08-product"],
-  ["09-signature-revision-story", "09-revision"],
   ["10-details-and-accessibility", "10-details"],
   ["11-responsive-showcase", "11-responsive"],
   ["12-refinement-and-validation", "12-refinement"],

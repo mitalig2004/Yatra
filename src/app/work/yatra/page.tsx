@@ -32,11 +32,10 @@ const chapters = [
   ["05", "Exploration", "exploration"],
   ["06", "Identity", "identity"],
   ["07", "Product", "product"],
-  ["08", "One change", "one-change"],
-  ["09", "Details", "details"],
-  ["10", "Responsive", "responsive"],
-  ["11", "Refinement", "refinement"],
-  ["12", "Reflection", "reflection"],
+  ["08", "Details", "details"],
+  ["09", "Responsive", "responsive"],
+  ["10", "Refinement", "refinement"],
+  ["11", "Reflection", "reflection"],
 ];
 
 const illustrations = [
@@ -115,7 +114,7 @@ export default function CaseStudyPage() {
     <CaseStudyMotion>
       <main id="main" className={`${styles.page} case-study-page`}>
         <aside className={styles.chapterRail} aria-label="Case study chapters">
-          <strong>YATRA / 12 CHAPTERS</strong>
+          <strong>YATRA / {chapters.length} CHAPTERS</strong>
           <nav>
             {chapters.map(([number, label, id]) => (
               <a key={id} href={`#${id}`}><span>{number}</span>{label}</a>
@@ -126,7 +125,7 @@ export default function CaseStudyPage() {
         <details className={styles.mobileChapterNav}>
           <summary>
             <span>Explore the case study</span>
-            <strong>12 chapters</strong>
+            <strong>{chapters.length} chapters</strong>
             <ArrowDown aria-hidden="true" />
           </summary>
           <nav aria-label="Case study chapters">
@@ -220,7 +219,6 @@ export default function CaseStudyPage() {
               <p>No primary interview study is documented for this concept. The starting point is a requirements-led hypothesis about young independent travelers who gather inspiration across tools and repeatedly reshape their plans.</p>
             </div>
             <Photo src="/case-study/photos/morjim-friends-sunset.jpg" alt="Friends standing together at Morjim Beach during sunset" className={styles.travelerPhoto} />
-            <Image className={styles.friendsIllustration} src="/case-study/illustrations/friends-planning.svg" alt="Original illustration of friends planning around a shared itinerary" width={640} height={420} />
           </div>
           <div className={styles.researchLedger}>
             <article><Eye size={18} /><span>Observed in product ecology</span><strong>Planning spans maps, messages, notes and booking tools.</strong></article>
@@ -336,37 +334,9 @@ export default function CaseStudyPage() {
           </div>
         </section>
 
-        <section id="one-change" className={`${styles.chapter} ${styles.revision}`} data-export-panel="09-revision" data-revision-sequence>
-          <div className={styles.revisionIntro} data-reveal>
-            <ChapterLabel number="08">One change. Many consequences.</ChapterLabel>
-            <h2>Move one café.<br />Keep the whole trip trustworthy.</h2>
-            <p>This sequence uses the implemented Goa fixture. The café is moved—not added again—and the ₹400 increase is estimated transport.</p>
-          </div>
-          <div className={styles.revisionStory}>
-            <div className={styles.revisionStage} data-revision-stage>
-              <div className={styles.revisionScreens}>
-                <figure data-revision-panel="0"><Image src="/case-study/plan-desktop.png" alt="Accepted YATRA itinerary before the change" width={1440} height={1000} /></figure>
-                <figure data-revision-panel="1"><Image src="/case-study/conflict-desktop.png" alt="Impact Review with a 20-minute reservation conflict" width={1440} height={1000} /></figure>
-                <figure data-revision-panel="2"><Image src="/case-study/conflict-mobile.png" alt="Mobile conflict resolution proposal" width={390} height={844} /></figure>
-                <figure data-revision-panel="3"><Image src="/case-study/budget-desktop.png" alt="Updated YATRA budget after applying the move" width={1440} height={1000} /></figure>
-              </div>
-              <div className={styles.revisionStatus} data-revision-status><span>ACCEPTED PLAN · REVISION 1</span><strong>₹37,600</strong><small>of ₹40,000 shared</small></div>
-              <div className={styles.revisionMeter}><i data-revision-progress /></div>
-            </div>
-            <ol className={styles.revisionSteps}>
-              <li data-revision-step data-panel="0"><span>01 · ACCEPTED</span><h3>A calm baseline.</h3><p>The café sits on Day 1. Timeline, map and budget all represent Revision 1.</p><strong>Day 1 ₹5,400 · Day 2 ₹6,000</strong></li>
-              <li data-revision-step data-panel="1"><span>02 · REQUESTED CHANGE</span><h3>Café → Day 2.</h3><p>The activity appears at its proposed destination while the accepted plan remains intact.</p><strong>Preview · not applied</strong></li>
-              <li data-revision-step data-panel="1"><span>03 · CONSEQUENCE</span><h3>You’re 20 minutes short.</h3><div className={styles.timingLine}><b>5:00</b><i /><b>20 min</b><i /><b>5:00</b></div><p>Café ends at 5:00 pm. Travel takes 20 minutes. The reservation starts at 5:00 pm.</p></li>
-              <li data-revision-step data-panel="2"><span>04 · RESOLUTION</span><h3>Move café earlier.</h3><p>The selected option recalculates the proposal without committing it. Nearby alternative, another day and manual adjustment remain available.</p><strong>Conflict cleared · Apply still required</strong></li>
-              <li data-revision-step data-panel="3"><span>05 · APPLY</span><h3>One coherent Revision 2.</h3><p>Timeline, route and budget update together. The moved café receives focus and Undo becomes available.</p><strong>₹37,600 → ₹38,000 · +₹400 transport</strong></li>
-              <li data-revision-step data-panel="0"><span>06 · UNDO</span><h3>Confidence includes recovery.</h3><p>Undo restores the previous itinerary, map route, day totals and ₹37,600 estimate as one coherent history state.</p><strong>Revision 1 restored</strong></li>
-            </ol>
-          </div>
-        </section>
-
         <section id="details" className={`${styles.chapter} ${styles.details}`} data-export-panel="10-details" data-reveal>
           <div className={styles.detailsHead}>
-            <ChapterLabel number="09">Beautiful details, thoughtful decisions</ChapterLabel>
+            <ChapterLabel number="08">Beautiful details, thoughtful decisions</ChapterLabel>
             <h2>Intelligence stays visible, reversible and under traveler control.</h2>
           </div>
           <div className={styles.detailGrid}>
@@ -384,15 +354,17 @@ export default function CaseStudyPage() {
 
         <section id="responsive" className={`${styles.chapter} ${styles.responsive}`} data-export-panel="11-responsive">
           <div className={styles.responsiveCopy} data-reveal>
-            <ChapterLabel number="10">Designed for every journey</ChapterLabel>
+            <ChapterLabel number="09">Designed for every journey</ChapterLabel>
             <h2>Focused mobile tasks.<br />A connected desktop canvas.</h2>
             <p>Desktop lets timeline and map share the hero workspace. Mobile switches between them and turns Impact Review into a focused decision task while preserving selection and proposal state.</p>
           </div>
-          <Photo src="/case-study/photos/goa-palm-coast.jpg" alt="Palm-lined Goa coastline" className={styles.responsivePhoto} />
-          <div className={styles.deviceStage} data-device-stage>
-            <div className={styles.desktopDevice}><Image src="/case-study/plan-desktop.png" alt="YATRA desktop planning workspace" width={1440} height={1000} /></div>
-            <div className={styles.phoneDevice}><Image src="/case-study/plan-mobile.png" alt="YATRA mobile timeline" width={390} height={844} /></div>
-            <div className={`${styles.phoneDevice} ${styles.phoneMap}`}><Image src="/case-study/map-mobile.png" alt="YATRA mobile map" width={390} height={844} /></div>
+          <div className={styles.responsiveStage}>
+            <Photo src="/case-study/photos/goa-palm-coast.jpg" alt="Palm-lined Goa coastline" className={styles.responsivePhoto} />
+            <div className={styles.deviceStage} data-device-stage>
+              <div className={styles.desktopDevice}><Image src="/case-study/plan-desktop.png" alt="YATRA desktop planning workspace" width={1440} height={1000} /></div>
+              <div className={styles.phoneDevice}><Image src="/case-study/plan-mobile.png" alt="YATRA mobile timeline" width={390} height={844} /></div>
+              <div className={`${styles.phoneDevice} ${styles.phoneMap}`}><Image src="/case-study/map-mobile.png" alt="YATRA mobile map" width={390} height={844} /></div>
+            </div>
           </div>
           <div className={styles.breakpointNotes}>
             <p><span>320–390</span> Vertical chapters · single-view planner · touch-first controls</p>
@@ -403,7 +375,7 @@ export default function CaseStudyPage() {
 
         <section id="refinement" className={`${styles.chapter} ${styles.refinement}`} data-export-panel="12-refinement" data-compare-story>
           <div className={styles.refinementLead} data-reveal>
-            <ChapterLabel number="11">Refining the experience</ChapterLabel>
+            <ChapterLabel number="10">Refining the experience</ChapterLabel>
             <h2>A clearer next action, without inventing user evidence.</h2>
             <p>No moderated usability study was conducted. This comparison reflects documented internal review and implementation history.</p>
           </div>
@@ -428,7 +400,7 @@ export default function CaseStudyPage() {
           <div className={styles.reflectionShade} />
           <Image className={styles.reflectionArt} src="/case-study/illustrations/final-travel-scene.svg" alt="Original final illustration of the Goa journey continuing" width={640} height={420} data-final-art />
           <div className={styles.reflectionCopy} data-reveal>
-            <ChapterLabel number="12">The journey continues</ChapterLabel>
+            <ChapterLabel number="11">The journey continues</ChapterLabel>
             <blockquote>The most useful intelligence was not generating more ideas. It was helping a traveler understand the consequence of one decision.</blockquote>
           </div>
           <div className={styles.outcomeGrid}>
