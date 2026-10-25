@@ -183,14 +183,6 @@ export function CaseStudyMotion({ children }: { children: ReactNode }) {
         scrollTrigger: { trigger: "[data-device-stage]", start: "top 82%", toggleActions: "play none none reverse" },
       });
 
-      gsap.fromTo("[data-final-art]", { y: 100, rotate: 13, autoAlpha: 0 }, {
-        y: 0,
-        rotate: 4,
-        autoAlpha: 1,
-        ease: "none",
-        scrollTrigger: { trigger: "[data-final-art]", start: "top 88%", end: "bottom 58%", scrub: 0.6 },
-      });
-
       return () => media.revert();
     }, root);
 

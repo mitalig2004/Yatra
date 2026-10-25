@@ -260,6 +260,9 @@ em {
 .skip-link:focus {
   top: 10px;
 }
+body:has(.case-study-page) .site-header {
+  display: none;
+}
 .site-header {
   height: 84px;
   display: flex;

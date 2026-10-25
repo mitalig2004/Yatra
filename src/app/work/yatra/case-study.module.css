@@ -34,6 +34,8 @@
 .heroPhoto img { object-position:center 58%; }
 .heroShade { position:absolute; inset:0; z-index:1; background:#17211b80; }
 .heroTop { position:relative; z-index:6; display:flex; justify-content:space-between; padding:30px 5.3%; border-bottom:1px solid #ffffff66; font-size:9px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+.heroTop p:first-child { font-weight:500; }
+.heroTop strong { font-weight:800; }
 .heroTitle { position:relative; z-index:5; max-width:1400px; padding:84px 5.3% 0; }
 .heroTitle>span { display:block; color:#f5d7a9; font-size:clamp(66px,14vw,220px); line-height:.72; font-weight:800; letter-spacing:.16em; }
 .heroTitle h1 { max-width:950px; margin-top:54px; font-size:clamp(48px,6.5vw,102px); line-height:.88; letter-spacing:-.055em; font-weight:600; }
@@ -303,11 +305,10 @@
 .reflection { min-height:1550px; padding-bottom:80px; color:#fcfbf7; background:#20211d; overflow:hidden; }
 .reflectionPhoto { position:absolute; inset:0 0 auto; height:900px; }
 .reflectionShade { position:absolute; inset:0 0 auto; height:900px; background:#1320188f; }
-.reflectionArt { position:absolute; z-index:3; right:4%; top:520px; width:420px; height:auto; transform:rotate(4deg); box-shadow:0 24px 60px #0006; }
 .reflectionCopy { position:relative; z-index:2; max-width:1200px; padding-top:90px; }
 .reflection .chapterLabel { color:#f1d5a8; }
 .reflection blockquote { max-width:1050px; font-family:"Instrument Serif",serif; font-size:clamp(52px,7vw,104px); line-height:.91; }
-.outcomeGrid { position:relative; z-index:4; display:grid; grid-template-columns:repeat(4,1fr); margin-top:500px; border:1px solid #ffffff38; background:#20211deb; }
+.outcomeGrid { position:relative; z-index:4; display:grid; grid-template-columns:repeat(4,1fr); margin-top:320px; border:1px solid #ffffff38; background:#20211deb; }
 .outcomeGrid article { min-height:190px; padding:25px; border-right:1px solid #ffffff38; }
 .outcomeGrid article:last-child { border:0; }
 .outcomeGrid span { color:#d8c8ac; font-size:8px; font-weight:800; letter-spacing:.15em; }
@@ -484,7 +485,6 @@
   .reflectionPhoto,.reflectionShade { height:740px; }
   .reflectionCopy { padding-top:50px; }
   .reflection blockquote { font-size:50px; }
-  .reflectionArt { position:relative; right:auto; top:auto; width:90%; margin:330px auto 0; transform:rotate(2deg); }
   .outcomeGrid { grid-template-columns:1fr; margin-top:38px; }
   .outcomeGrid article { min-height:130px; border-right:0; }
   .finalCta { padding:45px 18px; }
@@ -508,7 +508,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .page * { scroll-behavior:auto !important; animation:none !important; transition:none !important; }
-  .page [data-reveal],.page [data-chaos-card],.page [data-organized-plan],.page [data-route-line],.page [data-wireframe-layer],.page [data-illustration],.page [data-product-shot],.page [data-compare-after],.page [data-final-art] { opacity:1 !important; transform:none !important; clip-path:none !important; }
+  .page [data-reveal],.page [data-chaos-card],.page [data-organized-plan],.page [data-route-line],.page [data-wireframe-layer],.page [data-illustration],.page [data-product-shot],.page [data-compare-after] { opacity:1 !important; transform:none !important; clip-path:none !important; }
   .revisionScreens figure { opacity:0 !important; transform:none !important; }
   .revisionScreens figure:first-child { opacity:1 !important; }
   .revisionSteps li { opacity:1 !important; }
@@ -530,6 +530,6 @@
   .chapter { padding:50px 36px; }
   .revisionStage { position:relative; top:auto; }
   .revisionSteps li { opacity:1 !important; break-inside:avoid; }
-  .page [data-reveal],.page [data-chaos-card],.page [data-organized-plan],.page [data-route-line],.page [data-wireframe-layer],.page [data-illustration],.page [data-product-shot],.page [data-compare-after],.page [data-final-art] { opacity:1 !important; transform:none !important; clip-path:none !important; }
+  .page [data-reveal],.page [data-chaos-card],.page [data-organized-plan],.page [data-route-line],.page [data-wireframe-layer],.page [data-illustration],.page [data-product-shot],.page [data-compare-after] { opacity:1 !important; transform:none !important; clip-path:none !important; }
   .credits { break-before:page; }
 }

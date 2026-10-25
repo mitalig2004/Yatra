@@ -139,7 +139,7 @@ export default function CaseStudyPage() {
           <Photo src="/case-study/photos/mandrem-sunset.jpg" alt="Sunset over Mandrem Beach in Goa" className={styles.heroPhoto} priority />
           <div className={styles.heroShade} />
           <div className={styles.heroTop}>
-            <p>Product design case study · 2026</p>
+            <p><strong>Product design case study</strong> · 2026</p>
             <p>Goa, India · 15.6° N</p>
           </div>
           <div className={styles.heroTitle} data-hero-title>
@@ -398,7 +398,6 @@ export default function CaseStudyPage() {
         <section id="reflection" className={`${styles.chapter} ${styles.reflection}`} data-export-panel="13-closing">
           <Photo src="/case-study/photos/mandrem-sunset.jpg" alt="The Arabian Sea at sunset from Mandrem, Goa" className={styles.reflectionPhoto} />
           <div className={styles.reflectionShade} />
-          <Image className={styles.reflectionArt} src="/case-study/illustrations/final-travel-scene.svg" alt="Original final illustration of the Goa journey continuing" width={640} height={420} data-final-art />
           <div className={styles.reflectionCopy} data-reveal>
             <ChapterLabel number="11">The journey continues</ChapterLabel>
             <blockquote>The most useful intelligence was not generating more ideas. It was helping a traveler understand the consequence of one decision.</blockquote>
