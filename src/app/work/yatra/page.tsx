@@ -302,7 +302,11 @@ export default function CaseStudyPage() {
                 <span>{i === 2 ? "SELECTED" : "REJECTED"}</span><h3>{title}</h3><p>{copy}</p>
               </article>
             ))}
-            <Image className={styles.calendarArt} src="/case-study/illustrations/travel-calendar.svg" alt="Original illustration of a four-day travel calendar" width={640} height={420} />
+            <aside className={styles.fieldNote} aria-label="Design field note">
+              <span>YATRA FIELD NOTE 07</span>
+              <p>Sequence explains <em>when.</em><br />Geography reveals <em>whether.</em></p>
+              <div><b>Selected direction</b><strong>Timeline + map</strong></div>
+            </aside>
           </div>
           <div className={styles.decisionJournal}>
             {decisions.map((item) => (
