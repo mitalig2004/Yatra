@@ -23,8 +23,6 @@
 .chapterRail a { display:flex; gap:8px; align-items:center; min-height:29px; color:#d8d8d3; font-size:8px; }
 .chapterRail a:hover { color:#fff; }
 .chapterRail a span { color:#aab7b0; font-family:"Instrument Serif",serif; font-size:11px; }
-.mobileChapterNav { display:none; }
-
 .photo { position:relative; overflow:hidden; background:#dedbd1; }
 .photo img { object-fit:cover; }
 .photo>span { position:absolute; inset:0; pointer-events:none; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E"); mix-blend-mode:multiply; opacity:.16; }
@@ -399,17 +397,6 @@
 }
 
 @media (max-width: 720px) {
-  .mobileChapterNav { display:block; color:var(--journal-ink); background:var(--journal-paper); border-bottom:1px solid var(--journal-line); }
-  .mobileChapterNav summary { display:grid; grid-template-columns:1fr auto 20px; align-items:center; gap:10px; min-height:56px; padding:0 20px; cursor:pointer; list-style:none; }
-  .mobileChapterNav summary::-webkit-details-marker { display:none; }
-  .mobileChapterNav summary span { color:var(--journal-green); font-size:11px; font-weight:750; }
-  .mobileChapterNav summary strong { color:var(--text-secondary,#62645e); font-size:9px; font-weight:650; letter-spacing:.08em; text-transform:uppercase; }
-  .mobileChapterNav summary svg { width:17px; height:17px; transition:transform .2s ease; }
-  .mobileChapterNav[open] summary svg { transform:rotate(180deg); }
-  .mobileChapterNav nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); padding:8px 20px 18px; border-top:1px solid var(--journal-line); }
-  .mobileChapterNav a { display:grid; grid-template-columns:27px 1fr; align-items:center; min-height:48px; padding:6px 8px 6px 0; color:var(--journal-ink); border-bottom:1px solid var(--journal-line); font-size:11px; line-height:1.25; }
-  .mobileChapterNav a:nth-child(odd) { margin-right:12px; }
-  .mobileChapterNav a span { color:var(--journal-green); font-family:"Instrument Serif",serif; font-size:14px; }
   .hero { min-height:920px; }
   .heroTop { padding:18px 20px; font-size:7px; }
   .heroTitle { padding:58px 20px 0; }
@@ -507,8 +494,6 @@
 }
 
 @media (max-width: 360px) {
-  .mobileChapterNav nav { grid-template-columns:1fr; }
-  .mobileChapterNav a:nth-child(odd) { margin-right:0; }
   .heroTitle>span { font-size:53px; }
   .heroTitle h1 { font-size:43px; }
   .heroJournal { width:132px; height:184px; }
