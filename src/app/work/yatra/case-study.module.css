@@ -151,14 +151,14 @@
 .signatureFlow strong { display:block; margin-top:25px; font-size:10px; line-height:1.35; }
 
 .exploration { background:#f4efe5; }
-.sketchbook { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:28px; align-items:start; margin-top:86px; padding:58px; border:1px solid #cfc8bb; background-color:#ded1b9; background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H24M0 0V24' fill='none' stroke='%238f7b5a' stroke-opacity='.08'/%3E%3C/svg%3E"); }
-.sketchPhoto { position:relative; grid-column:1/5; height:390px; padding:12px 12px 40px; background:#fcfbf7; transform:rotate(-3deg); box-shadow:0 20px 45px #4a3a2430; }
+.sketchbook { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:28px; align-items:stretch; margin-top:86px; padding:58px; border:1px solid #cfc8bb; background-color:#ded1b9; background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H24M0 0V24' fill='none' stroke='%238f7b5a' stroke-opacity='.08'/%3E%3C/svg%3E"); }
+.sketchPhoto { position:relative; grid-column:1/5; grid-row:1/3; min-height:600px; padding:12px 12px 40px; background:#fcfbf7; transform:rotate(-2deg); box-shadow:0 20px 45px #4a3a2430; }
 .sketchPhoto>div { height:100%; }
 .sketchbook>article { position:relative; width:auto; padding:20px; background:#fcfbf7; border:1px solid #b9ae9d; box-shadow:0 20px 45px #4a3a2424; }
-.sketchA { grid-column:5/9; transform:rotate(1deg); }
-.sketchB { grid-column:9/13; transform:rotate(-1deg); }
-.sketchC { grid-column:4/8; transform:rotate(-1deg); }
-.wireframe { display:grid; gap:6px; height:150px; margin:16px 0; padding:12px; border:1px solid #a8a99f; background:#f7f5ef; }
+.sketchA { grid-column:5/9; grid-row:1; transform:rotate(.5deg); }
+.sketchB { grid-column:9/13; grid-row:1; transform:rotate(-.5deg); }
+.sketchC { grid-column:5/9; grid-row:2; transform:rotate(-.5deg); }
+.wireframe { display:grid; gap:6px; height:120px; margin:16px 0; padding:12px; border:1px solid #a8a99f; background:#f7f5ef; }
 .wireframe i { display:block; border:1px solid #bdbdb5; background:#f0eee7; }
 .calendar { grid-template-columns:repeat(3,1fr); }
 .board { grid-template-columns:repeat(2,1fr); }
@@ -167,7 +167,7 @@
 .sketchbook article>span:not(.evidence) { color:var(--journal-green); font-size:7px; font-weight:800; letter-spacing:.15em; }
 .sketchbook article h3 { margin:8px 0; font-family:"Instrument Serif",serif; font-size:28px; font-weight:400; }
 .sketchbook article p { color:#62645e; font-size:9px; line-height:1.5; }
-.calendarArt { position:relative; grid-column:8/12; width:100%; height:auto; transform:rotate(3deg); box-shadow:0 18px 42px #4a3a2430; }
+.calendarArt { position:relative; grid-column:9/13; grid-row:2; align-self:center; width:100%; height:auto; transform:rotate(1.5deg); box-shadow:0 18px 42px #4a3a2430; }
 .decisionJournal { display:grid; grid-template-columns:repeat(2,1fr); margin-top:80px; border-top:1px solid #b9ae9d; }
 .decisionJournal article { display:grid; grid-template-columns:65px 1fr; gap:18px; padding:35px 30px; border-right:1px solid #b9ae9d; border-bottom:1px solid #b9ae9d; }
 .decisionJournal article:nth-child(even) { border-right:0; }
@@ -363,9 +363,9 @@
   .goalSpread strong { font-size:26px; }
   .mapJournal article { width:130px; }
   .sketchbook { grid-template-columns:repeat(2,minmax(0,1fr)); padding:38px; }
-  .sketchPhoto,.sketchbook>article { grid-column:auto; width:auto; }
-  .sketchPhoto { height:360px; }
-  .calendarArt { grid-column:1/-1; width:48%; justify-self:center; }
+  .sketchPhoto,.sketchbook>article { grid-column:auto; grid-row:auto; width:auto; }
+  .sketchPhoto { height:360px; min-height:360px; }
+  .calendarArt { grid-column:1/-1; grid-row:auto; width:48%; justify-self:center; }
   .typePoster { grid-template-columns:1fr 1fr; }
   .typePoster>.photo { grid-column:1/-1; min-height:360px; }
   .productGallery { min-height:1200px; }
@@ -445,8 +445,8 @@
   .signatureFlow li { display:grid; grid-template-columns:48px 1fr; min-height:60px; border-right:0; border-bottom:1px solid #b9ae9d; }
   .signatureFlow strong { margin-top:2px; }
   .sketchbook { grid-template-columns:1fr; gap:22px; margin:50px -8px 0; padding:28px 18px; }
-  .sketchPhoto,.sketchbook>article,.calendarArt { grid-column:1; width:100%; margin:0; transform:none; }
-  .sketchPhoto { height:300px; }
+  .sketchPhoto,.sketchbook>article,.calendarArt { grid-column:1; grid-row:auto; width:100%; margin:0; transform:none; }
+  .sketchPhoto { height:300px; min-height:300px; }
   .decisionJournal article { grid-template-columns:43px 1fr; padding:28px 8px; border-right:0; }
   .identityLead h2 { font-size:50px; }
   .palette { grid-template-columns:repeat(2,1fr); }
