@@ -490,6 +490,8 @@
   .outcomeGrid article { min-height:130px; border-right:0; }
   .finalCta { padding:45px 18px; }
   .finalCta h2 { font-size:49px; }
+  .finalCta>div { display:grid; grid-template-columns:1fr; width:100%; }
+  .finalCta :global(.button) { width:100%; justify-content:center; }
   .credits { flex-direction:column; padding:28px 20px; }
 }
 
