@@ -288,7 +288,17 @@ export default function CaseStudyPage() {
             ].map(([letter, title, copy, kind], i) => (
               <article key={letter} data-wireframe-layer className={styles[`sketch${letter}`]}>
                 <Evidence tone="reconstructed">Reconstructed option {letter}</Evidence>
-                <div className={`${styles.wireframe} ${styles[kind]}`} aria-hidden="true"><i /><i /><i /><i /><i /><i /></div>
+                {kind === "calendar" ? (
+                  <div className={`${styles.conceptVisual} ${styles.calendarVisual}`}>
+                    <Image src="/case-study/illustrations/travel-calendar.svg" alt="Illustrated four-day calendar grid concept" width={640} height={420} />
+                  </div>
+                ) : kind === "timeline" ? (
+                  <div className={`${styles.conceptVisual} ${styles.timelineVisual}`}>
+                    <Image src="/case-study/plan-desktop.png" alt="YATRA timeline and map planning workspace" width={1600} height={1000} />
+                  </div>
+                ) : (
+                  <div className={`${styles.wireframe} ${styles[kind]}`} aria-hidden="true"><i /><i /><i /><i /><i /><i /></div>
+                )}
                 <span>{i === 2 ? "SELECTED" : "REJECTED"}</span><h3>{title}</h3><p>{copy}</p>
               </article>
             ))}
