@@ -127,7 +127,6 @@ export default function CaseStudyPage() {
           <div className={styles.heroShade} />
           <div className={styles.heroTop}>
             <p><span>Product design</span><strong>Case study</strong><span>· 2026</span></p>
-            <p>Goa, India · 15.6° N</p>
           </div>
           <div className={styles.heroTitle} data-hero-title>
             <span>YATRA</span>
